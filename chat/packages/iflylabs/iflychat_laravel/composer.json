@@ -1,0 +1,17 @@
+{
+    "name": "iflylabs/iflychat-laravel",
+    "authors": [
+        {
+            "name": "decentname",
+            "email": "mr.hemangpta@gmail.com"
+        }
+    ],
+    "autoload":{
+		"psr-4":{
+			"iflylabs\\iflychat_laravel\\":"src/"	
+		    }
+	},
+    "require": {
+		"illuminate/support":"~5"
+	}
+}
