@@ -94,8 +94,8 @@
 
         <?php
         use iflylabs\iflychat_laravel\Http\Controllers\iflychatController;
-        const API_KEY = 'EYESMfZ32Ths7DHD_6iZHrK4YC_NEE1NTTnsOPGvkqcW50823';
-        const APP_ID = '8a0b0cd4-57f6-4f7c-8f99-9bac91877483';
+        const API_KEY = 'xxxxxxxxxxxxxxxxx';
+        const APP_ID = 'xxxxxxx';
         $iflychat = new iflychatController(APP_ID,API_KEY);
         $res = $iflychat->getHtmlCode();
         print $res;
