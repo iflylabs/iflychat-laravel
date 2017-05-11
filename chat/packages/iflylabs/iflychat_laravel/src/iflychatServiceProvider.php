@@ -15,7 +15,8 @@ class iflychatServiceProvider extends ServiceProvider
     {
         //Reuqire routes
         require __DIR__."/Http/routes.php";
-
+        //Load views
+        $this->loadViewsFrom(__DIR__.'/views', 'chat');
     }
 
     /**

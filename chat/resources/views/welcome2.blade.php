@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ config('app.locale') }}">
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -66,17 +66,6 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
-
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
@@ -91,21 +80,20 @@
                 </div>
             </div>
         </div>
-
         <?php
-        use iflylabs\iflychat_laravel\Http\Controllers\iflychatController;
-        const API_KEY = 'xxxxxxxxxxxxxxxx';
-        const APP_ID = 'xxxxxxxxxxxxxxxxxxxxxxx';
-        $iflychat = new iflychatController(APP_ID,API_KEY);
-        $user = array(
-            'user_name' => 'testUser', 
-            'user_id' => '2', 
-            'is_admin' => FALSE
-        );
+        // use iflylabs\iflychat_laravel\Http\Controllers\iflychatController;
+        // const API_KEY = 'xxxxxxxxxxxx';
+        // const APP_ID = 'xxxxxxxxxxxxxxxxxxxx';
+        // $iflychat = new iflychatController(APP_ID,API_KEY);
+        // $user = array(
+        //     'user_name' => 'testUser', 
+        //     'user_id' => '2', 
+        //     'is_admin' => FALSE
+        // );
 
-        // $iflychat->setUser($user);
-        $iflycode = $iflychat->getHtmlCode();
-        print $iflycode;
+        // $iflycode = $iflychat->getHtmlCode();
+        print $GLOBALS["iflycode"];
+        
         ?>
 
     </body>
