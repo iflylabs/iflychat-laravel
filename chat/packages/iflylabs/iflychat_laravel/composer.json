@@ -1,8 +1,8 @@
 {
-    "name": "iflylabs/iflychat-laravel",
+    "name": "iflylabs/iflychat_laravel",
     "authors": [
         {
-            "name": "decentname",
+            "name": "iflylabs",
             "email": "mr.hemangpta@gmail.com"
         }
     ],
