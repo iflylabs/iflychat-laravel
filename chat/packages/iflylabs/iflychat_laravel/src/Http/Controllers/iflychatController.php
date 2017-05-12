@@ -8,7 +8,7 @@ class iflychatController extends Controller
 {
     protected $user_details, $settings;
     /*
-     * Initialise iFlyChat class with settings and user details array
+     * Initialise iFlyChatController class with settings and user details array
      */
     function __construct($app_id = '', $api_key = '', $settings = array())
     {
