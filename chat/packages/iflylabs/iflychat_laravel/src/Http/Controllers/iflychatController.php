@@ -309,9 +309,4 @@ class iflychatController extends Controller
     {
         $this->user_details['all_roles'] = $all_roles;
     }
-    
-    public function showChat(){
-    	return "chat from controller";
-    }
-
 }

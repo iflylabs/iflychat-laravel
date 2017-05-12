@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -80,21 +80,9 @@
                 </div>
             </div>
         </div>
-        <?php
-        // use iflylabs\iflychat_laravel\Http\Controllers\iflychatController;
-        // const API_KEY = 'xxxxxxxxxxxx';
-        // const APP_ID = 'xxxxxxxxxxxxxxxxxxxx';
-        // $iflychat = new iflychatController(APP_ID,API_KEY);
-        // $user = array(
-        //     'user_name' => 'testUser', 
-        //     'user_id' => '2', 
-        //     'is_admin' => FALSE
-        // );
-
-        // $iflycode = $iflychat->getHtmlCode();
-        print $GLOBALS["iflycode"];
         
+        <?php
+            print getHtml();
         ?>
-
     </body>
 </html>

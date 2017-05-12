@@ -93,19 +93,7 @@
         </div>
 
         <?php
-        use iflylabs\iflychat_laravel\Http\Controllers\iflychatController;
-        const API_KEY = 'xxxxxxxxxxxxxxxx';
-        const APP_ID = 'xxxxxxxxxxxxxxxxxxxxxxx';
-        $iflychat = new iflychatController(APP_ID,API_KEY);
-        $user = array(
-            'user_name' => 'testUser', 
-            'user_id' => '2', 
-            'is_admin' => FALSE
-        );
-
-        // $iflychat->setUser($user);
-        $iflycode = $iflychat->getHtmlCode();
-        print $iflycode;
+            print getHtml();
         ?>
 
     </body>
