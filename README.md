@@ -13,6 +13,6 @@ Instructions to use:
         ] <br/>
 4. Receive API KEY and APP_ID from iflychat.com and use that in "vendor/iflylabs/iflychat_laravel/src/helpers.php". <br/>
 5. To enable chat, just enter the following lines in your Views: <br/>
-	<?php
+	`<?php
 		print getHtml();
-	?>
+	?>`
