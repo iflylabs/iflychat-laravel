@@ -1,7 +1,7 @@
 # iflychat-laravel
 iFlyChat Plugin for Laravel Framework
 
-Instructions to use:
+## Instructions to use:
  - Include our service provider in Providers list of app.php file :
 	
 	```
